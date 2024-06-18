@@ -1,0 +1,47 @@
+
+.container {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.forms {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tables {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+app-header, app-footer {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+product-form, employee-form {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+product-table, employee-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+product-table th, product-table td, employee-table th, employee-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
